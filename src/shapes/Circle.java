@@ -1,14 +1,14 @@
 package shapes;
 
-public class Circle extends Figures {
-    private int r;
+public class Circle extends Figure {
+    private int radius;
 
-    public Circle(int r) {
-        this.r = r;
+    public Circle(int radius) {
+        this.radius = radius;
     }
 
     @Override
-    public void Coordinates() {
-        System.out.println(String.format("Circle(%d);", r));
+    public void showFigureInfo() {
+        System.out.println(String.format("Circle(%d);", radius));
     }
 }

@@ -1,14 +1,14 @@
 package shapes;
 
-public class Square extends Figures {
-    private int a;
+public class Square extends Figure {
+    private int side;
 
-    public Square(int a) {
-        this.a = a;
+    public Square(int side) {
+        this.side = side;
     }
 
     @Override
-    public void Coordinates() {
-        System.out.println(String.format("Square(%d);", a));
+    public void showFigureInfo() {
+        System.out.println(String.format("Square(%d);", side));
     }
 }

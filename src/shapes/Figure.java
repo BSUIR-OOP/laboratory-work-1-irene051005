@@ -1,7 +1,7 @@
 package shapes;
 
-public abstract class Figures {
-    public void Coordinates() {
+public abstract class Figure {
+    public void showFigureInfo() {
         System.out.println("Name(args)");
     }
 }

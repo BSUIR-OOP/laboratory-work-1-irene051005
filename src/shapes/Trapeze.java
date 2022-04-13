@@ -1,17 +1,17 @@
 package shapes;
 
-public class Trapeze extends Figures {
-    private int a, b, c, d;
+public class Trapeze extends Figure {
+    private int side1, side2, side3, side4;
 
-    public Trapeze(int a, int b, int c, int d) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.d = d;
+    public Trapeze(int side1, int side2, int side3, int side4) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+        this.side4 = side4;
     }
 
     @Override
-    public void Coordinates() {
-        System.out.println(String.format("Trapeze(%d, %d, %d, %d);", a, b, c, d));
+    public void showFigureInfo() {
+        System.out.println(String.format("Trapeze(%d, %d, %d, %d);", side1, side2, side3, side4));
     }
 }

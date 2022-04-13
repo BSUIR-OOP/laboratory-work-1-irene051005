@@ -1,16 +1,19 @@
 import shapes.*;
+import java.util.ArrayList;
 
 public class main {
     public static void main(String[] args) {
-        List arr = new List();
+        ArrayList<Figure> figures = new ArrayList<>();
 
-        arr.add(new Rect(10,20));
-        arr.add(new Line(12));
-        arr.add(new Circle(100));
-        arr.add(new Trapeze(1,4,4,5));
-        arr.add(new Square(37));
-        arr.add(new Triangle(6,6,6));
+        figures.add(new Rectangle(10,20));
+        figures.add(new Line(12));
+        figures.add(new Circle(100));
+        figures.add(new Trapeze(1, 4, 4, 5));
+        figures.add(new Square(37));
+        figures.add(new Triangle(6, 6, 6));
 
-        arr.show();
+        for (Figure figure: figures) {
+            figure.showFigureInfo();
+        }
     }
 }
